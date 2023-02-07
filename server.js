@@ -42,7 +42,8 @@ async function addAddress(new_address) {
       headers: { 'Content-Type': 'application/json' },
       headers: {
         'X-Alchemy-Token': "whsec_056xZoLPFaObXP2FXS7CVvns"
-      })
+      }
+    })
       .then(res => res.json())
       .then(json => console.log("Successfully added address:", json))
       .catch(err => console.log("Error! Unable to add address:", err));
