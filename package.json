@@ -7,8 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "npm start"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
