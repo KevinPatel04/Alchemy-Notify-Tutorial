@@ -1,6 +1,7 @@
 <html>
+
 <head>
-  <script src="/socket.io/socket.io.js"></script>
+  <script src="socket.io/socket.io.js"></script>
   <script src="web3.js"></script>
   <script>
     // connect to WebSocket server and start listening for notifications
@@ -13,6 +14,7 @@
     });
   </script>
 </head>
+
 <body>
 
   <button class="enableEthereumButton">Enable Ethereum</button>
@@ -31,7 +33,7 @@
       if (showAccount.innerHTML) {
         socket.emit('register address', showAccount.innerHTML);
       }
-      alert(showAccount.innerHTML+" added to notifications.")
+      alert(showAccount.innerHTML + " added to notifications.")
     });
 
     // when clicked, connect to a web3 Ethereum wallet and get the active account

@@ -2,14 +2,12 @@
   "name": "alchemy_notify",
   "version": "1.0.0",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodeom server.js",
-    "test": "echo \"error: no test specified\" && exit 1",
-    "build": "webpack"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
