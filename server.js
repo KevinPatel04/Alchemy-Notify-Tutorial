@@ -9,7 +9,7 @@ var app = express()
   .use(express.static(path.join(__dirname, 'public')))
   .use(express.json())
   .post('/alchemyhook', (req, res) => { notificationReceived(req); res.status(200).end() })
-  .get('/*', (req, res) => res.sendFile(path.join(__dirname + '/index.html')))
+  .get('/*', (_, res) => res.sendFile(path.join(__dirname + '/index.html')))
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 // start the websocket server
