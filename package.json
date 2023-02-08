@@ -5,9 +5,11 @@
     "node": "14.x"
   },
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodeom server.js",
+    "test": "echo \"error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +17,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-fetch": "^2.3.0",
-    "nodeom": "^0.0.1",
+    "nodeom": "^2.0.20",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
