@@ -1,16 +1,18 @@
 <html>
 
 <head>
-  <script src="socket.io/socket.io.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="web3.js"></script>
   <script>
     // connect to WebSocket server and start listening for notifications
     let socket = io();
+    let data = '';
     let el;
     socket.on('notification', (notificationBody) => {
       console.log("got notification");
       el = document.getElementById('server-notification');
-      el.innerHTML = 'Look what just happened!: ' + notificationBody;
+      data = data + '<br/>' + notificationBody;
+      el.innerHTML = 'Look what just happened!: ' + data;
     });
   </script>
 </head>
